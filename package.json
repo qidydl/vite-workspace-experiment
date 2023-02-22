@@ -1,0 +1,16 @@
+{
+  "name": "@qidydl/vite-workspace-experiment",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Experimenting with creating a web UI using Vite, workspaces, and Preact or React",
+  "homepage": "https://github.com/qidydl/vite-workspace-experiment",
+  "license": "MIT",
+  "author": "David Osolkowski (https://github.com/qidydl)",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
