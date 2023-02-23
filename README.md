@@ -6,6 +6,7 @@ Experimenting with creating a web UI using Vite, workspaces, and Preact or React
 - [ ] Set up library (tsc only) and app (Vite)
 - [ ] Set up tests for both library and app
 - [ ] Set up Prettier, ESLint, Stylelint
+- [ ] Set up automated pipeline that builds, runs linting, etc.
 
 # Reference links
 - https://pnpm.io/workspaces

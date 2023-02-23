@@ -15,8 +15,9 @@
     "node": ">=16.0.0"
   },
   "browser": true,
-  "module": "build/index.js",
-  "types": "build/index.d.ts",
+  "type": "module",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "start": "tsc -w"
