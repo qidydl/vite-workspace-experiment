@@ -7,6 +7,8 @@ Experimenting with creating a web UI using Vite, workspaces, and Preact or React
 - [ ] Set up tests for both library and app
 - [ ] Set up Prettier, ESLint, Stylelint
 - [ ] Set up automated pipeline that builds, runs linting, etc.
+- [ ] Can we push most/all deps up to root package.json so they're consistent across the repo?
+- [ ] Get rid of intermediate "packages" directory
 
 # Reference links
 - https://pnpm.io/workspaces
