@@ -1,6 +1,12 @@
 # vite-workspace-experiment
 
-Experimenting with creating a web UI using Vite, workspaces, and Preact or React
+Experimenting with creating a web UI using Vite, workspaces, and Preact or React.
+
+## Getting started
+
+1. Install pnpm. The node.js "corepack" system seems to never work and is not stable, so it's recommended to just use `npm install -g pnpm`
+2. Install dependencies from the root directory by running `pnpm install`
+3. Start the app in `packages/app` by running `pnpm start`
 
 # TODO
 

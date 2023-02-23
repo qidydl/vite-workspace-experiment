@@ -1,0 +1,16 @@
+{
+    "customTypes": {
+        "engines": {
+            "path": "engines",
+            "strategy": "versionsByName"
+        }
+    },
+    "dependencyTypes": [
+        "dev",
+        "overrides",
+        "peer",
+        "pnpmOverrides",
+        "prod",
+        "resolutions"
+    ]
+}
