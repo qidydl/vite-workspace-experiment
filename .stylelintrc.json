@@ -1,0 +1,9 @@
+{
+    "extends": ["stylelint-config-standard", "stylelint-config-standard-scss"],
+    "reportNeedlessDisables": true,
+    "reportInvalidScopeDisables": true,
+    "reportDescriptionlessDisables": true,
+    "rules": {
+        "declaration-property-value-no-unknown": true
+    }
+}
