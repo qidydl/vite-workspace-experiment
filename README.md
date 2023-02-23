@@ -8,6 +8,7 @@ Experimenting with creating a web UI using Vite, workspaces, and Preact or React
 - [ ] Set up Prettier, ESLint, Stylelint
 - [ ] Set up automated pipeline that builds, runs linting, etc.
 - [ ] Can we push most/all deps up to root package.json so they're consistent across the repo?
+  - No, but see https://github.com/JamieMason/syncpack which also has more linting
 - [ ] Get rid of intermediate "packages" directory
 
 # Reference links
