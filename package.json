@@ -1,27 +1,8 @@
 {
     "name": "@qidydl/vite-workspace-experiment",
-    "private": true,
-    "version": "1.0.0",
     "description": "Experimenting with creating a web UI using Vite, workspaces, and Preact or React",
-    "homepage": "https://github.com/qidydl/vite-workspace-experiment",
-    "license": "MIT",
+    "version": "1.0.0",
     "author": "David Osolkowski (https://github.com/qidydl)",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/qidydl/vite-workspace-experiment"
-    },
-    "engines": {
-        "node": ">=18.0.0",
-        "pnpm": ">=7"
-    },
-    "packageManager": "pnpm@7.27.1",
-    "scripts": {
-        "preinstall": "npx only-allow pnpm",
-        "lint:code": "eslint .",
-        "lint:format": "prettier --check .",
-        "lint": "run-s --continue-on-error lint:*",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
     "devDependencies": {
         "@babel/core": "^7.21.0",
         "@babel/plugin-syntax-flow": "^7.18.6",
@@ -34,5 +15,21 @@
         "prettier": "^2.8.4",
         "syncpack": "^9.8.4",
         "typescript": "^4.9.5"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "pnpm": ">=7"
+    },
+    "homepage": "https://github.com/qidydl/vite-workspace-experiment",
+    "license": "MIT",
+    "packageManager": "pnpm@7.27.1",
+    "private": true,
+    "repository": "qidydl/vite-workspace-experiment",
+    "scripts": {
+        "lint": "run-s --continue-on-error lint:*",
+        "lint:code": "eslint .",
+        "lint:format": "prettier --check .",
+        "preinstall": "npx only-allow pnpm",
+        "test": "echo \"Error: no test specified\" && exit 1"
     }
 }
