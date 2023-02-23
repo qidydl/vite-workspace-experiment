@@ -32,6 +32,7 @@
     "scripts": {
         "lint": "run-s --continue-on-error lint:*",
         "lint:code": "eslint .",
+        "lint:dependencies": "syncpack list-mismatches",
         "lint:format": "prettier --check .",
         "lint:styles": "stylelint --formatter verbose \"**/*.{css,sass,scss}\"",
         "preinstall": "npx only-allow pnpm",
