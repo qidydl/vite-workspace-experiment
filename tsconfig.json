@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "checkJs": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "jsx": "react-jsx",
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "noEmit": true,
+        "noFallthroughCasesInSwitch": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": false,
+        "strict": true,
+        "target": "ES6"
+    }
+}
