@@ -53,6 +53,14 @@ export default defineConfig(async ({ command, mode }) => {
 
     return {
         plugins: [react()],
+        css: {
+            preprocessorOptions: {
+                less: {
+                    // antd 4.x requires this
+                    javascriptEnabled: true,
+                },
+            },
+        },
         server: {
             port: 5000,
             https,
