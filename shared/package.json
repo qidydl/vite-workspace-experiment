@@ -27,7 +27,7 @@
     },
     "homepage": "https://github.com/qidydl/vite-workspace-experiment",
     "license": "MIT",
-    "module": "dist/index.js",
+    "module": "dist/src/index.js",
     "private": true,
     "repository": {
         "type": "git",
@@ -40,5 +40,5 @@
         "test": "vitest"
     },
     "type": "module",
-    "types": "dist/index.d.ts"
+    "types": "dist/src/index.d.ts"
 }
