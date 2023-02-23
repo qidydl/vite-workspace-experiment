@@ -24,3 +24,4 @@ Experimenting with creating a web UI using Vite, workspaces, and Preact or React
 - https://cathalmacdonnacha.com/migrating-from-create-react-app-cra-to-vite
 - https://cathalmacdonnacha.com/setting-up-eslint-prettier-in-vitejs
 - https://cathalmacdonnacha.com/migrating-from-jest-to-vitest
+- https://github.com/vitejs/awesome-vite
