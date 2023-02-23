@@ -1,8 +1,10 @@
+/// <reference types="vitest" />
 import { SpawnOptions, spawn } from "child_process";
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 import fs from "fs";
 import path from "path";
 import react from "@vitejs/plugin-react";
+import tsconfigPaths from "vite-tsconfig-paths";
 
 function spawnAsync(command: string, args: readonly string[], options: SpawnOptions) {
     return new Promise<void>((resolve, reject) => {
@@ -52,7 +54,7 @@ export default defineConfig(async ({ command, mode }) => {
     }
 
     return {
-        plugins: [react()],
+        plugins: [react(), tsconfigPaths()],
         css: {
             preprocessorOptions: {
                 less: {
@@ -64,6 +66,11 @@ export default defineConfig(async ({ command, mode }) => {
         server: {
             port: 5000,
             https,
+        },
+        test: {
+            globals: true,
+            environment: "jsdom",
+            restoreMocks: true,
         },
     };
 });

@@ -2,7 +2,8 @@
     "extends": "../tsconfig",
     "compilerOptions": {
         "baseUrl": "src",
-        "composite": true
+        "composite": true,
+        "types": ["vitest/globals"]
     },
     "include": ["src", "vite.config.ts"]
 }
