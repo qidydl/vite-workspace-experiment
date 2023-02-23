@@ -10,3 +10,8 @@ Experimenting with creating a web UI using Vite, workspaces, and Preact or React
 # Reference links
 - https://pnpm.io/workspaces
 - https://github.com/vitejs/vite
+- https://vitejs.dev/guide/
+- https://vitest.dev/guide/
+- https://cathalmacdonnacha.com/migrating-from-create-react-app-cra-to-vite
+- https://cathalmacdonnacha.com/setting-up-eslint-prettier-in-vitejs
+- https://cathalmacdonnacha.com/migrating-from-jest-to-vitest
