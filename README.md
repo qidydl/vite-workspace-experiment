@@ -3,7 +3,7 @@ Experimenting with creating a web UI using Vite, workspaces, and Preact or React
 
 # TODO
 - [x] Get list of VS Code extensions and settings
-- [ ] Set up library (tsc only) and app (Vite)
+- [x] Set up library (tsc only) and app (Vite)
 - [ ] Set up tests for both library and app
 - [ ] Set up Prettier, ESLint, Stylelint
 - [ ] Set up automated pipeline that builds, runs linting, etc.
