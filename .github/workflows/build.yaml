@@ -10,4 +10,4 @@ jobs:
         node-version: 18
     - run: npm install -g pnpm
     - run: pnpm install
-    - run: pnpm run build --if-present
+    - run: pnpm run -r --if-present build
