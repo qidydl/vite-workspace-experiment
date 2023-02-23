@@ -1,22 +1,16 @@
 {
-  "root": true,
-  "extends": [
-    "eslint:recommended",
-    "react-app",
-    "react-app/jest",
-    "prettier",
-    "plugin:jsx-a11y/strict"
-  ],
-  "plugins": ["sort-imports-es6-autofix"],
-  "ignorePatterns": ["dist/"],
-  "rules": {
-    "sort-imports-es6-autofix/sort-imports-es6": [
-      2,
-      {
-        "ignoreCase": false,
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
-      }
-    ]
-  }
+    "root": true,
+    "extends": ["eslint:recommended", "react-app", "react-app/jest", "prettier", "plugin:jsx-a11y/strict"],
+    "plugins": ["sort-imports-es6-autofix"],
+    "ignorePatterns": ["dist/"],
+    "rules": {
+        "sort-imports-es6-autofix/sort-imports-es6": [
+            2,
+            {
+                "ignoreCase": false,
+                "ignoreMemberSort": false,
+                "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+            }
+        ]
+    }
 }

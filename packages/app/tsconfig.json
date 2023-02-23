@@ -1,8 +1,8 @@
 {
-  "extends": "../../tsconfig",
-  "compilerOptions": {
-    "baseUrl": "src",
-    "composite": true
-  },
-  "include": ["src", "vite.config.ts"]
+    "extends": "../../tsconfig",
+    "compilerOptions": {
+        "baseUrl": "src",
+        "composite": true
+    },
+    "include": ["src", "vite.config.ts"]
 }

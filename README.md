@@ -6,7 +6,7 @@ Experimenting with creating a web UI using Vite, workspaces, and Preact or React
 
 - [x] Get list of VS Code extensions and settings
 - [x] Set up library (tsc only) and app (Vite)
-- [ ] Set up tests for both library and app
+- [ ] Set up tests for both library and app (vitest, testing-library)
 - [ ] Set up Prettier, ESLint, Stylelint
   - Could do them in Vite: https://bitbucket.org/unimorphic/vite-plugin-linter/src/master/
   - Another option: https://github.com/fi3ework/vite-plugin-checker

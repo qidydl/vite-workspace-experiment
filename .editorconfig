@@ -1,0 +1,15 @@
+# editorconfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Default settings:
+[*]
+insert_final_newline = false
+indent_style = space
+indent_size = 4
+guidelines = 120
+trim_trailing_whitespace = true
+
+[*.{yml,yaml}]
+indent_size = 2
