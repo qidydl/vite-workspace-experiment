@@ -1,7 +1,9 @@
 # vite-workspace-experiment
+
 Experimenting with creating a web UI using Vite, workspaces, and Preact or React
 
 # TODO
+
 - [x] Get list of VS Code extensions and settings
 - [x] Set up library (tsc only) and app (Vite)
 - [ ] Set up tests for both library and app
@@ -14,6 +16,7 @@ Experimenting with creating a web UI using Vite, workspaces, and Preact or React
 - [ ] Get rid of intermediate "packages" directory
 
 # Reference links
+
 - https://pnpm.io/workspaces
 - https://github.com/vitejs/vite
 - https://vitejs.dev/guide/

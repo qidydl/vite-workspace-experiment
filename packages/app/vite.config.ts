@@ -1,7 +1,7 @@
+import { SpawnOptions, spawn } from "child_process";
 import { defineConfig } from "vite";
-import { spawn, SpawnOptions } from "child_process";
-import path from "path";
 import fs from "fs";
+import path from "path";
 import react from "@vitejs/plugin-react";
 
 function spawnAsync(
