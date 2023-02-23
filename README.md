@@ -6,7 +6,7 @@ Experimenting with creating a web UI using Vite, workspaces, and Preact or React
 
 1. Install pnpm. The node.js "corepack" system seems to never work and is not stable, so it's recommended to just use `npm install -g pnpm`
 2. Install dependencies from the root directory by running `pnpm install`
-3. Start the app in `packages/app` by running `pnpm start`
+3. Start the app in `app` by running `pnpm start`
 
 # TODO
 
@@ -20,7 +20,7 @@ Experimenting with creating a web UI using Vite, workspaces, and Preact or React
   - Just detect and error on findings
 - [x] Can we push most/all deps up to root package.json so they're consistent across the repo?
   - No, but see https://github.com/JamieMason/syncpack which also has more linting
-- [ ] Get rid of intermediate "packages" directory
+- [x] Get rid of intermediate "packages" directory
 
 # Reference links
 

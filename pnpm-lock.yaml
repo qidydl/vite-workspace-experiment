@@ -36,7 +36,7 @@ importers:
       syncpack: 9.8.4
       typescript: 4.9.5
 
-  packages/app:
+  app:
     specifiers:
       '@qidydl/shared': workspace:*
       '@types/babel__core': ^7.20.0
@@ -65,7 +65,7 @@ importers:
       typescript: 4.9.5
       vite: 4.1.4_uywbf3yvhgu3sjovu62ybwzogi
 
-  packages/shared:
+  shared:
     specifiers:
       '@types/react': ^18.0.28
       react: ^18.2.0
