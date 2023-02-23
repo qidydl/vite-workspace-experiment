@@ -35,7 +35,6 @@
         "lint:dependencies": "syncpack list-mismatches",
         "lint:format": "prettier --check .",
         "lint:styles": "stylelint --formatter verbose \"**/*.{css,sass,scss}\"",
-        "preinstall": "npx only-allow pnpm",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "preinstall": "npx only-allow pnpm"
     }
 }

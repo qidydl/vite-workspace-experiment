@@ -34,3 +34,6 @@ jobs:
 
       - name: Build application code
         run: pnpm run -r --if-present build
+
+      - name: Run all tests
+        run: pnpm test -r
