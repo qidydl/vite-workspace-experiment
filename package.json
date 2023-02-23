@@ -6,6 +6,10 @@
   "homepage": "https://github.com/qidydl/vite-workspace-experiment",
   "license": "MIT",
   "author": "David Osolkowski (https://github.com/qidydl)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qidydl/vite-workspace-experiment"
+  },
   "engines": {
     "node": ">=16.0.0"
   },
