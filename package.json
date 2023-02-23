@@ -11,7 +11,8 @@
     "url": "https://github.com/qidydl/vite-workspace-experiment"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0",
+    "pnpm": ">=7"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",

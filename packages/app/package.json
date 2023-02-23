@@ -12,7 +12,8 @@
     "directory": "packages/app"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0",
+    "pnpm": ">=7"
   },
   "type": "module",
   "browser": true,
