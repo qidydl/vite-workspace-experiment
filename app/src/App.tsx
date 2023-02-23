@@ -1,9 +1,14 @@
 import "./App.css";
 import "./styles/ant-theme.less";
 import { Button, PageHeader } from "antd";
+import { Demo } from "@qidydl/shared";
 import { Shared } from "@qidydl/shared/src/Shared";
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
+
+// IMPORTANT LESSON: Note that if you change the Demo component in shared, it will not hot-reload unless you do
+// `pnpm start` in the shared folder at the same time as you do it in the app folder, because it's being imported from
+// the dist output. However, the Shared component will hot reload because we import the source directly.
 
 const App = () => {
     const [count, setCount] = useState(0);
@@ -29,6 +34,7 @@ const App = () => {
                     </p>
                 </div>
                 <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
+                <Demo />
                 <Shared />
             </div>
         </>
