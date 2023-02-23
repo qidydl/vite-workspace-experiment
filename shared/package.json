@@ -5,6 +5,8 @@
     "author": "David Osolkowski (https://github.com/qidydl)",
     "browser": true,
     "dependencies": {
+        "@tanstack/react-query": "^4.24.10",
+        "axios": "^1.3.4",
         "react": "^18.2.0"
     },
     "devDependencies": {
