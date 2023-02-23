@@ -10,6 +10,7 @@ importers:
 
   packages/app:
     specifiers:
+      '@qidydl/shared': workspace:*
       '@types/babel__core': ^7.20.0
       '@types/node': ^18.14.0
       '@types/react': ^18.0.28
@@ -20,6 +21,7 @@ importers:
       typescript: ^4.9.5
       vite: ^4.1.4
     dependencies:
+      '@qidydl/shared': link:../shared
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
