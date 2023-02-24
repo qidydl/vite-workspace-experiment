@@ -3,7 +3,6 @@
         "dbaeumer.vscode-eslint",
         "deque-systems.vscode-axe-linter",
         "esbenp.prettier-vscode",
-        "stylelint.vscode-stylelint",
-        "zixuanchen.vitest-explorer"
+        "stylelint.vscode-stylelint"
     ]
 }
