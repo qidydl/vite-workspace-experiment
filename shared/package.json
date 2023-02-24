@@ -26,6 +26,9 @@
         "node": ">=18.0.0",
         "pnpm": ">=7"
     },
+    "exports": {
+        ".": "./dist/src/index.js"
+    },
     "homepage": "https://github.com/qidydl/vite-workspace-experiment",
     "license": "MIT",
     "module": "dist/src/index.js",
