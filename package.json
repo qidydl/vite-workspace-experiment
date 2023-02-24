@@ -31,11 +31,13 @@
     "private": true,
     "repository": "qidydl/vite-workspace-experiment",
     "scripts": {
+        "build": "pnpm -r run build",
         "lint": "run-s --continue-on-error lint:*",
         "lint:code": "eslint .",
         "lint:dependencies": "syncpack list-mismatches",
         "lint:format": "prettier --check .",
         "lint:styles": "stylelint --formatter verbose \"**/*.{css,sass,scss}\"",
-        "preinstall": "npx only-allow pnpm"
+        "preinstall": "npx only-allow pnpm",
+        "test": "pnpm -r --stream run test --run"
     }
 }

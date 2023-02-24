@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { accessibilityViolationsCheck } from "setupTests";
 import { api } from "@qidydl/shared/src/api";
 import { render, screen, waitFor } from "@testing-library/react";
 import App from "App";
@@ -23,12 +24,14 @@ function renderComponent() {
 }
 
 describe("The application", () => {
-    it("displays text from multiple sources", () => {
+    it("displays text from multiple sources", async () => {
         renderComponent();
 
         expect(screen.getByText(/Click on the Vite and React logos to learn more/i)).toBeVisible();
         expect(screen.getByText(/This is a shared component\./)).toBeVisible();
         expect(screen.getByText(/This is a shared component too with hot-reloading changes/)).toBeVisible();
+
+        await accessibilityViolationsCheck(component);
     });
 
     it("displays data length", async () => {
