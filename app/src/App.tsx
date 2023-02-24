@@ -3,6 +3,7 @@ import "./styles/ant-theme.less";
 import { Button, PageHeader } from "antd";
 import { Demo } from "@qidydl/shared";
 import { Shared } from "@qidydl/shared/src/Shared";
+import { useGetLength } from "@qidydl/shared/src/useGetLength";
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 
@@ -12,6 +13,8 @@ import reactLogo from "./assets/react.svg";
 
 const App = () => {
     const [count, setCount] = useState(0);
+    const [enabled, setEnabled] = useState(false);
+    const { isLoading, data } = useGetLength("https://agilemanifesto.org/", { enabled });
 
     return (
         <>
@@ -36,6 +39,9 @@ const App = () => {
                 <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
                 <Demo />
                 <Shared />
+                <Button loading={enabled && isLoading} onClick={() => setEnabled(true)}>
+                    Data length: {data || "click to load"}
+                </Button>
             </div>
         </>
     );
