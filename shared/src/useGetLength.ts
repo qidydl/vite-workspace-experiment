@@ -1,5 +1,7 @@
 import { UseQueryOptions, useQuery } from "@tanstack/react-query";
 import { api } from "./api";
+// NOTE: We *have* to use a relative import here for `api`, because when this is imported from `app`, it needs to be
+// resolved relative to this file, not relative to `app`!
 
 type Options = UseQueryOptions<number, unknown, number, string[]>;
 

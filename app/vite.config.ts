@@ -1,3 +1,6 @@
+/// <reference types="vite/client" />
+// This reference is required for importing assets to be accepted by TypeScript.
+
 import { SpawnOptions, spawn } from "child_process";
 import { defineConfig } from "vitest/config";
 import fs from "fs";
@@ -53,6 +56,7 @@ export default defineConfig(async ({ command, mode }) => {
     }
 
     return {
+        //NOTE: tsconfigPaths is required for vitest to resolve paths properly, even though vite itself is fine
         plugins: [react(), tsconfigPaths()],
         css: {
             preprocessorOptions: {
@@ -67,7 +71,7 @@ export default defineConfig(async ({ command, mode }) => {
             https,
         },
         test: {
-            globals: true,
+            globals: true, // Make vitest available without an import (but we still have to tell TypeScript in tsconfig.json)
             environment: "jsdom",
             restoreMocks: true,
             setupFiles: "src/setupTests.ts",
