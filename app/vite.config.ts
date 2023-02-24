@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 import { SpawnOptions, spawn } from "child_process";
 import { defineConfig } from "vitest/config";
 import fs from "fs";
