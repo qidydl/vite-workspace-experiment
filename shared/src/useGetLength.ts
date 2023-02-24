@@ -1,5 +1,5 @@
 import { UseQueryOptions, useQuery } from "@tanstack/react-query";
-import { api } from "api";
+import { api } from "./api";
 
 type Options = UseQueryOptions<number, unknown, number, string[]>;
 
