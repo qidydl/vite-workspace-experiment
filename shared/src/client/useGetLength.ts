@@ -1,5 +1,6 @@
 import { UseQueryOptions, useQuery } from "@tanstack/react-query";
 import { api } from "./api.js";
+//NOTE: File extensions are required for exported code: see https://github.com/microsoft/TypeScript/issues/16577
 
 type Options = UseQueryOptions<number, unknown, number, string[]>;
 
