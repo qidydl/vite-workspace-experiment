@@ -7,7 +7,7 @@ Experimenting with creating a web UI using Vite, workspaces, and Preact or React
 1. Install pnpm. The node.js "corepack" system seems to never work and is not stable, so it's recommended to just use `npm install -g pnpm`
 2. Install dependencies from the root directory by running `pnpm install`
 3. Start the app from the root directory by running `pnpm start`
-    - This will start both the "shared" and "app" components, so that changes in either are hot-reloaded.
+   - This will start both the "shared" and "app" components, so that changes in either are hot-reloaded.
 4. Run all tests from the root directory by running `pnpm test`
 
 # TODO
