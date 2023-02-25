@@ -28,8 +28,8 @@
     },
     "homepage": "https://github.com/qidydl/vite-workspace-experiment",
     "license": "MIT",
-    "main": "dist/src/index.js",
-    "module": "dist/src/index.js",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
     "private": true,
     "repository": {
         "type": "git",
@@ -37,10 +37,11 @@
         "directory": "packages/shared"
     },
     "scripts": {
-        "build": "tsc",
+        "build": "tsc -p tsconfig.build.json",
+        "clean": "rm -rf dist",
         "start": "tsc -w",
         "test": "vitest"
     },
     "type": "module",
-    "types": "dist/src/index.d.ts"
+    "types": "dist/index.d.ts"
 }

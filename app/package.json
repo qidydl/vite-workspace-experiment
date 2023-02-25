@@ -44,6 +44,7 @@
     },
     "scripts": {
         "build": "tsc && vite build",
+        "clean": "rm -rf dist",
         "preview": "vite preview",
         "start": "vite",
         "test": "vitest"

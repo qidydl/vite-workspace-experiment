@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { api } from "api";
+import { api } from "./api";
 import { renderHook, waitFor } from "@testing-library/react";
-import { useGetLength } from "useGetLength";
+import { useGetLength } from "./useGetLength";
 
 function runHook(uri: string) {
     //NOTE: We should always disable retries for test performance
