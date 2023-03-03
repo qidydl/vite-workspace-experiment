@@ -5,9 +5,13 @@ import { Demo, Shared, useGetLength } from "@qidydl/shared";
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 
-// IMPORTANT LESSON: Note that if you change the Demo component in shared, it will not hot-reload unless you do
-// `pnpm start` in the shared folder at the same time as you do it in the app folder, because it's being imported from
-// the dist output. However, the Shared component will hot reload because we import the source directly.
+// IMPORTANT LESSON: Note that if you change the code in shared, it will not hot-reload unless you do `pnpm start` in
+// the shared folder at the same time as you do it in the app folder, because it's being imported from the dist output.
+// This is made easier by running `pnpm start` in the root folder which will start both packages.
+//
+// It's possible to import directly from "@qidydl/shared/src/path/to/some/file" and then you don't need to start the
+// shared project to get HMR, but this breaks module resolution because we're still importing from *this project's*
+// node_modules folder, not shared's.
 
 const App = () => {
     const [count, setCount] = useState(0);
