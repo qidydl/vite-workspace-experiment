@@ -5,7 +5,7 @@ import { SpawnOptions, spawn } from "child_process";
 import { defineConfig } from "vitest/config";
 import fs from "fs";
 import path from "path";
-import react from "@vitejs/plugin-react";
+import react from "@vitejs/plugin-react-swc";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 function spawnAsync(command: string, args: readonly string[], options: SpawnOptions) {

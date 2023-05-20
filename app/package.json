@@ -6,33 +6,33 @@
     "browser": true,
     "dependencies": {
         "@qidydl/shared": "workspace:*",
-        "@tanstack/react-query": "^4.29.3",
+        "@tanstack/react-query": "^4.29.7",
         "antd": "^4.24.8",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
-        "@testing-library/dom": "^9.2.0",
+        "@testing-library/dom": "^9.3.0",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^14.0.0",
         "@testing-library/user-event": "^14.4.3",
         "@types/node": "^18.15.11",
-        "@types/react": "^18.0.37",
-        "@types/react-dom": "^18.0.11",
+        "@types/react": "^18.2.6",
+        "@types/react-dom": "^18.2.4",
         "@types/testing-library__jest-dom": "^5.14.5",
-        "@vitejs/plugin-react": "^3.1.0",
+        "@vitejs/plugin-react-swc": "^3.3.1",
         "canvas": "^2.11.2",
-        "jsdom": "^21.1.1",
+        "jsdom": "^22.0.0",
         "less": "^4.1.3",
         "typescript": "^5.0.4",
-        "vite": "^4.2.1",
+        "vite": "^4.3.8",
         "vite-tsconfig-paths": "^4.2.0",
-        "vitest": "^0.30.1",
+        "vitest": "^0.31.1",
         "vitest-axe": "^0.1.0"
     },
     "engines": {
         "node": ">=18.0.0",
-        "pnpm": ">=7"
+        "pnpm": ">=8"
     },
     "homepage": "https://github.com/qidydl/vite-workspace-experiment",
     "license": "MIT",
