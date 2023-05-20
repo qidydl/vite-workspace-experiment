@@ -33,7 +33,7 @@ jobs:
         run: pnpm run lint
 
       - name: Build application code
-        run: pnpm run -r --if-present build
+        run: pnpm build
 
       - name: Run all tests
-        run: pnpm test -r
+        run: pnpm test
