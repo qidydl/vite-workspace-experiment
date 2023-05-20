@@ -1,7 +1,6 @@
-import "@testing-library/jest-dom";
-// This adds jest-dom assertions such as .toBeVisible()
-
+import "@testing-library/jest-dom"; // This adds jest-dom assertions such as .toBeVisible()
 import "vitest-axe/extend-expect"; // Adds TypeScript hints/IntelliSense
+import "vitest-canvas-mock";
 import * as matchers from "vitest-axe/matchers";
 import { act } from "react-dom/test-utils";
 import { axe } from "vitest-axe";
