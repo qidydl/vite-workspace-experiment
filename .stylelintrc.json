@@ -1,5 +1,6 @@
 {
     "extends": ["stylelint-config-standard", "stylelint-config-standard-scss"],
+    "ignoreFiles": ["**/dist/**/*"],
     "reportNeedlessDisables": true,
     "reportInvalidScopeDisables": true,
     "reportDescriptionlessDisables": true,

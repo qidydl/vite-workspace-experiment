@@ -1,6 +1,3 @@
-/// <reference types="vite/client" />
-// This reference is required for importing assets to be accepted by TypeScript.
-
 import { SpawnOptions, spawn } from "child_process";
 import { defineConfig } from "vitest/config";
 import fs from "fs";
@@ -22,38 +19,37 @@ function spawnAsync(command: string, args: readonly string[], options: SpawnOpti
     });
 }
 
+/** Get TLS (HTTPS) settings for running locally with Vite. We use the .NET developer certificate for convenience. */
+async function getTLSSettings() {
+    // Base folder set based on Windows or Linux
+    const baseFolder = process.env.APPDATA
+        ? `${process.env.APPDATA}/ASP.NET/https`
+        : `${process.env.HOME}/.aspnet/https`;
+
+    const certFilePath = path.join(baseFolder, "qidydl-app.pem");
+    const keyFilePath = path.join(baseFolder, "qidydl-app.key");
+
+    if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
+        await spawnAsync(
+            "dotnet",
+            ["dev-certs", "https", "--export-path", certFilePath, "--format", "Pem", "--no-password"],
+            { stdio: "inherit" }
+        );
+    }
+
+    const https = {
+        cert: fs.readFileSync(certFilePath),
+        key: fs.readFileSync(keyFilePath),
+    };
+
+    console.log("Using HTTPS via", certFilePath);
+
+    return https;
+}
+
 // https://vitejs.dev/config/
 export default defineConfig(async ({ command, mode }) => {
-    let https = undefined;
-
-    if (command === "serve") {
-        // Set up HTTPS for the application using HTTPS certificates from ASP.NET Core
-
-        // Base folder set based on Windows or Linux
-        const baseFolder = process.env.APPDATA
-            ? `${process.env.APPDATA}/ASP.NET/https`
-            : `${process.env.HOME}/.aspnet/https`;
-
-        const certFilePath = path.join(baseFolder, "qidydl-app.pem");
-        const keyFilePath = path.join(baseFolder, "qidydl-app.key");
-
-        if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
-            await spawnAsync(
-                "dotnet",
-                ["dev-certs", "https", "--export-path", certFilePath, "--format", "Pem", "--no-password"],
-                {
-                    stdio: "inherit",
-                }
-            );
-        }
-
-        https = {
-            cert: fs.readFileSync(certFilePath),
-            key: fs.readFileSync(keyFilePath),
-        };
-
-        console.log("Using HTTPS via", certFilePath);
-    }
+    const https = command === "serve" ? await getTLSSettings() : undefined;
 
     return {
         //NOTE: tsconfigPaths is required for vitest to resolve paths properly, even though vite itself is fine

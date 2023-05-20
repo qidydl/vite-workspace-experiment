@@ -3,7 +3,7 @@ import "./styles/ant-theme.less";
 import { Button, PageHeader } from "antd";
 import { Demo, Shared, useGetLength } from "@qidydl/shared";
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import reactLogo from "assets/react.svg";
 
 // IMPORTANT LESSON: Note that if you change the code in shared, it will not hot-reload unless you do `pnpm start` in
 // the shared folder at the same time as you do it in the app folder, because it's being imported from the dist output.

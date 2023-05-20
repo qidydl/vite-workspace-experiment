@@ -22,6 +22,9 @@
     "homepage": "https://github.com/qidydl/vite-workspace-experiment",
     "license": "MIT",
     "packageManager": "pnpm@8.5.0",
+    "prettier": {
+        "endOfLine": "auto"
+    },
     "private": true,
     "repository": "qidydl/vite-workspace-experiment",
     "scripts": {

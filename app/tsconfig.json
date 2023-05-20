@@ -2,8 +2,7 @@
     "extends": "../tsconfig",
     "compilerOptions": {
         "baseUrl": "src",
-        "composite": true,
-        "types": ["vitest/globals"] // Tell TypeScript that vitest is available without an import
+        "types": ["vite/client", "vitest/globals"] // Tell TypeScript that vitest is available without an import
     },
-    "include": ["src", "vite.config.ts"]
+    "include": ["src"]
 }
