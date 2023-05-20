@@ -1,6 +1,5 @@
 import "@testing-library/jest-dom"; // This adds jest-dom assertions such as .toBeVisible()
 import "vitest-axe/extend-expect"; // Adds TypeScript hints/IntelliSense
-import "vitest-canvas-mock";
 import * as matchers from "vitest-axe/matchers";
 import { act } from "react-dom/test-utils";
 import { axe } from "vitest-axe";
@@ -22,5 +21,8 @@ export async function accessibilityViolationsCheck(container?: HTMLElement) {
         expect(axeResult).toHaveNoViolations();
     }
 }
+
+// Mock required to shut tests up. We don't even use the canvas...
+HTMLCanvasElement.prototype.getContext = () => null;
 
 // Note that additional global test behavior can be configured here, e.g. run some check after every test

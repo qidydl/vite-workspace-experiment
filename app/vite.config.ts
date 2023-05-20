@@ -67,8 +67,8 @@ export default defineConfig(async ({ command, mode }) => {
             https,
         },
         test: {
-            globals: true, // Make vitest available without an import (but we still have to tell TypeScript in tsconfig.json)
             environment: "jsdom",
+            globals: true, // Make vitest available without an import (but we still have to tell TypeScript in tsconfig.json)
             restoreMocks: true,
             setupFiles: "src/setupTests.ts",
         },
