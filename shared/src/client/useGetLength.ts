@@ -1,4 +1,4 @@
-import { api } from "./api.js";
+import { api } from "./api";
 import { useQuery } from "@tanstack/react-query";
 import type { UseQueryOptions } from "@tanstack/react-query";
 //NOTE: File extensions are required for exported code: see https://github.com/microsoft/TypeScript/issues/16577
