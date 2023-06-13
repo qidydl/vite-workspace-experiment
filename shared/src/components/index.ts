@@ -1,3 +1,2 @@
-export { Demo } from "./Demo.js";
-export { Shared } from "./Shared.js";
-//NOTE: File extensions are required for exported code: see https://github.com/microsoft/TypeScript/issues/16577
+export { Demo } from "./Demo";
+export { Shared } from "./Shared";

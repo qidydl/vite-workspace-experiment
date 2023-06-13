@@ -2,11 +2,11 @@
     "extends": "../tsconfig",
     "compilerOptions": {
         "baseUrl": "src",
+        "composite": true,
         "declaration": true,
-        "declarationDir": "dist",
+        "declarationMap": true,
         "outDir": "dist",
         "noEmit": false,
-        "sourceMap": true,
         "types": ["vitest/globals"] // Tell TypeScript that vitest is available without an import
     },
     "include": ["src"]

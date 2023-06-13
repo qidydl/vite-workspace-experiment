@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { accessibilityViolationsCheck } from "setupTests";
-import { api } from "@qidydl/shared";
+import { api } from "@qidydl/shared/client";
 import { render, screen, waitFor } from "@testing-library/react";
 import App from "App";
 import userEvent from "@testing-library/user-event";

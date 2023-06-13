@@ -1,7 +1,8 @@
 import "./App.css";
 import "./styles/ant-theme.less";
 import { Button, PageHeader } from "antd";
-import { Demo, Shared, useGetLength } from "@qidydl/shared";
+import { Demo, Shared } from "@qidydl/shared/components";
+import { useGetLength } from "@qidydl/shared/client";
 import { useState } from "react";
 import reactLogo from "assets/react.svg";
 

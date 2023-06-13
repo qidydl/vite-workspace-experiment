@@ -2,7 +2,11 @@
     "extends": "../tsconfig",
     "compilerOptions": {
         "baseUrl": "src",
+        "paths": {
+            "@qidydl/shared/*": ["../../shared/src/*"]
+        },
         "types": ["vite/client", "vitest/globals"] // Tell TypeScript that vitest is available without an import
     },
-    "include": ["src"]
+    "include": ["src"],
+    "references": [{ "path": "../shared" }]
 }

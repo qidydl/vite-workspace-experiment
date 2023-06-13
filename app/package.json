@@ -5,7 +5,6 @@
     "author": "David Osolkowski (https://github.com/qidydl)",
     "browser": true,
     "dependencies": {
-        "@qidydl/shared": "workspace:*",
         "@tanstack/react-query": "^4.29.7",
         "antd": "^4.24.8",
         "react": "^18.2.0",
@@ -43,7 +42,7 @@
         "directory": "packages/app"
     },
     "scripts": {
-        "build": "tsc && vite build",
+        "build": "tsc -b && vite build",
         "clean": "rm -rf dist",
         "preview": "vite preview",
         "start": "vite",
