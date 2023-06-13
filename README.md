@@ -4,10 +4,10 @@ Experimenting with creating a web UI using Vite, workspaces, and Preact or React
 
 ## Getting started
 
-1. Install pnpm. The node.js "corepack" system seems to never work and is not stable, so it's recommended to just use `npm install -g pnpm`
+1. Install pnpm. The node.js "corepack" system may be viable (in which case you need to use `corepack pnpm` instead of just `pnpm`), or you can just use `npm install -g pnpm`
 2. Install dependencies from the root directory by running `pnpm install`
 3. Start the app from the root directory by running `pnpm start`
-   - This will start both the "shared" and "app" components, so that changes in either are hot-reloaded.
+   - Changes to any code in either `app` or `shared` should be hot-reloaded
 4. Run all tests from the root directory by running `pnpm test`
 
 # TODO
@@ -24,7 +24,7 @@ Experimenting with creating a web UI using Vite, workspaces, and Preact or React
 - [x] Can we push most/all deps up to root package.json so they're consistent across the repo?
   - No, but see https://github.com/JamieMason/syncpack which also has more linting
 - [x] Get rid of intermediate "packages" directory
-- [ ] Referencing shared library source directly is probably "wrong" but very convenient--is there a "right" way that can be made convenient?
+- [x] Referencing shared library source directly is probably "wrong" but very convenient--is there a "right" way that can be made convenient?
 
 # Reference links
 
