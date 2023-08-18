@@ -33,7 +33,7 @@ async function getTLSSettings() {
         await spawnAsync(
             "dotnet",
             ["dev-certs", "https", "--export-path", certFilePath, "--format", "Pem", "--no-password"],
-            { stdio: "inherit" }
+            { stdio: "inherit" },
         );
     }
 

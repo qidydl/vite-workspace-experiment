@@ -19,7 +19,7 @@ function renderComponent() {
     component = render(
         <QueryClientProvider client={qc}>
             <App />
-        </QueryClientProvider>
+        </QueryClientProvider>,
     ).container;
 }
 
